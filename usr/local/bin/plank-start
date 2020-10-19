@@ -3,6 +3,12 @@
 if [ ! -f "/home/$USER/.hamonikr/plank-panel-top" ] ; then
     # 패널 상단 배치
     gsettings set org.cinnamon panels-enabled "['1:0:top']"
+    
+    # 테마 설정
+    gsettings set org.cinnamon.desktop.interface icon-theme 'HamoniKR-Jin'
+    gsettings set org.cinnamon.desktop.interface gtk-theme 'HamoniKR-Jin-light'
+    gsettings set org.cinnamon.desktop.wm.preferences theme 'HamoniKR-Jin-light'
+
     # 폰트 설정
     gsettings set org.cinnamon.desktop.interface font-name 'Noto Sans CJK KR 10'
     gsettings set org.nemo.desktop font 'Noto Sans CJK KR 10'        
