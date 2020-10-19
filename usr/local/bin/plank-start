@@ -11,6 +11,6 @@ if [ ! -f "/home/$USER/.hamonikr/plank-panel-top" ] ; then
     gsettings set org.gnome.desktop.interface monospace-font-name 'Noto Sans CJK KR 11'
 
     touch /home/$USER/.hamonikr/plank-panel-top    
-    exec plank
-
 fi
+
+exec plank
