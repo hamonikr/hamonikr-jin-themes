@@ -1,0 +1,12 @@
+hamonikr-jin-themes (1.1.0) jin; urgency=medium
+
+  * applyed panel top after install
+
+ -- HamoniKR <pkg@hamonikr.org>  Mon, 19 Oct 2020 10:54:50 +0900
+
+hamonikr-jin-themes (1.0.0) jin; urgency=medium
+
+  * build for HamoniKR 4.0
+
+ -- HamoniKR <pkg@hamonikr.org>  Sun, 18 Oct 2020 18:02:56 +0900
+ 

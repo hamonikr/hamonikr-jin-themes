@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [ ! -f "/home/$USER/.hamonikr/plank-panel-top" ] ; then
+    # 패널 상단 배치
+    gsettings set org.cinnamon panels-enabled "['1:0:top']"
+    # 폰트 설정
+    gsetting set org.cinnamon.desktop.interface font-name 'Lucida Grande 10'
+    gsetting set org.cinnamon.desktop.wm.preferences titlebar-font 'Lucida Grande Bold 10'
+    gsetting set org.gnome.desktop.interface monospace-font-name 'Lucida Console Semi-Condensed 11'
+    gsetting set org.gnome.desktop.interface document-font-name 'Lucida Grande 10'
+    gsetting set org.nemo.desktop font 'Lucida Grande 10'    
+    
+    exec plank
+    touch /home/$USER/.hamonikr/plank-panel-top
+fi

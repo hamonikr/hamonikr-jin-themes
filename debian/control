@@ -1,0 +1,14 @@
+Source: hamonikr-jin-themes
+Section: gnome
+Priority: optional
+Maintainer: HamoniKR <pkg@hamonikr.org>
+Build-Depends: debhelper (>= 9), sassc
+Standards-Version: 3.9.5
+
+Package: hamonikr-jin-themes
+Replaces: libplank-common, mint-clearloox-theme, mint-x-theme, mint-y-theme, mint-z-theme, mint-themes-gtk3, cinnamon-themes
+Conflicts: mint-clearloox-theme, mint-x-theme, mint-y-theme, mint-z-theme, mint-themes-gtk3, cinnamon-themes
+Depends: ${misc:Depends}, plank
+Architecture: all
+Description: HamoniKR Jin themes
+ Mac like theme for HamoniKR 4.0.

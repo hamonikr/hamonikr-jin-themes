@@ -1,0 +1,33 @@
+#!/bin/sh
+# prerm script for ldm-themes
+#
+# see: dh_installdeb(1)
+
+set -e
+
+case "$1" in
+    remove|deconfigure|failed-upgrade)
+
+      rm -f /usr/share/icons/HamoniKR-Jin/icon-theme.cache || true
+      rm -f /usr/share/icons/HamoniKR-Jin-dark/icon-theme.cache || true
+      rm -rf /usr/share/fonts/truetype/mac || true      
+      rm -rf /usr/share/fonts/truetype/hamonikr || true
+      fc-cache -v -f
+
+      RUID=$(who | awk 'FNR == 1 {print $1}')
+      if [ -f "/home/$RUID/.hamonikr/plank-panel-top" ] ; then
+        rm -f /home/$RUID/.hamonikr/plank-panel-top
+      fi
+
+    ;;
+
+    upgrade)
+    ;;
+
+    *)
+        echo "prerm called with unknown argument \`$1'" >&2
+        exit 1
+    ;;
+esac
+
+exit 0

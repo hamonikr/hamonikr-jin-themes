@@ -1,0 +1,29 @@
+#!/bin/sh
+# postinst script
+# see: dh_installdeb(1)
+
+set -e
+
+case "$1" in
+    configure)
+
+      fc-cache -v -f
+      gtk-update-icon-cache --force --quiet /usr/share/icons/HamoniKR-Jin
+      gtk-update-icon-cache --force --quiet /usr/share/icons/HamoniKR-Jin-dark      
+
+
+    ;;
+    abort-upgrade|abort-remove|abort-deconfigure)
+
+    ;;
+    triggered)
+
+
+    ;;
+    *)
+        echo "postinst called with unknown argument \`$1'" >&2
+        exit 1
+    ;;
+esac
+
+exit 0
