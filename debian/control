@@ -8,7 +8,7 @@ Standards-Version: 3.9.5
 Package: hamonikr-jin-themes
 Replaces: libplank-common, mint-clearloox-theme, mint-x-theme, mint-y-theme, mint-z-theme, mint-themes-gtk3, cinnamon-themes
 Conflicts: mint-clearloox-theme, mint-x-theme, mint-y-theme, mint-z-theme, mint-themes-gtk3, cinnamon-themes
-Depends: ${misc:Depends}, plank
+Depends: ${misc:Depends}, plank, fonts-noto-cjk-extra
 Architecture: all
 Description: HamoniKR Jin themes
  Mac like theme for HamoniKR 4.0.
