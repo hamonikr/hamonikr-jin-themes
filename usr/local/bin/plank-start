@@ -8,6 +8,7 @@ if [ ! -f "/home/$USER/.hamonikr/plank-panel-top" ] ; then
     gsettings set org.cinnamon.desktop.interface icon-theme 'HamoniKR-Jin'
     gsettings set org.cinnamon.desktop.interface gtk-theme 'HamoniKR-Jin-light'
     gsettings set org.cinnamon.desktop.wm.preferences theme 'HamoniKR-Jin-light'
+    gsettings get org.cinnamon.theme name 'Linux Mint'
 
     # 폰트 설정
     gsettings set org.cinnamon.desktop.interface font-name 'Noto Sans CJK KR 10'
